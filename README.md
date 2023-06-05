@@ -16,11 +16,15 @@ Expects the following file structure:
   ...
 /to_classify
   /photo_to_classify.jpeg
+  
+pretrained_model_goes_here
 ```
 
 Folder "/people" for people, containing subfolder named after each person, containing training images for that person's face. Also include a birthyear.txt containing only the 4-digit birth year for this person)
 
 Folder "/to_classify" containing images that have these people in them, that you want to classify.
+
+Pretrained model not included (I dont think I am allowed to include this)
 
 ### How it works:
 1. Preprocesses all training images, cropping to 120% of the face, and resizing. 
