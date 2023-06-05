@@ -12,7 +12,7 @@ def estimate_age(image_path):
 
     # Load model and weights
     model = get_wide_resnet(input_shape=(face_size, face_size, 3))
-    model.load_weights('weights.29-3.76_utk.hdf5')
+    model.load_weights('EfficientNetB3_224_weights.11-3.44.hdf5')
 
     # Load image
     img = Image.open(image_path)
